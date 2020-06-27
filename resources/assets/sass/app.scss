@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,40,500,700|Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
+@import "../../../node_modules/vuetify/dist/vuetify.css";
+
+@font-face {
+  font-family: "Edwardian Script";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/edwardian_script.ttf") format("truetype"),
+}
+
+@font-face {
+  font-family: "Copperplate Gothic Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/copperplate_gothic_bold_regular.ttf") format("truetype"),
+}
+
+@font-face {
+  font-family: "Aldine401 BT";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/aldine401BT.ttf") format("truetype"),
+}
+
+@font-face {
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/cinzel_regular.otf") format("truetype"),
+}
+
+@font-face {
+  font-family: "Cinzel Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/cinzel_bold.otf") format("truetype"),
+}
+
+.aldine401BT {
+  font-family: "Aldine401 BT";
+}
+
+.managers {
+  font-size: 30px;
+  line-height: 80px;
+}
+
+.toolbar-logo {
+  max-width: 100%;
+  max-height: 200px;
+}
+
+#NavbarTitle {
+  padding-top: 60px;
+  font-family: "Edwardian Script", cursive;
+  font-weight: 600;
+  font-size: 70px;
+}
+
+#NavbarPhone {
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 900;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+#CateringNavbarPhone {
+  color: white;
+  font-family: "Edwardian Script", cursive;
+  font-weight: 600;
+  font-size: 70px;
+}
+
+#CateringNavbarAddress {
+  color: white;
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 900;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+#NavbarAddress {
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 900;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+#pamsApostophe {
+  letter-spacing: -10px;
+}
+
+.revslider {
+  position: relative;
+}
+
+#menuTitle {
+  padding-top: 30px;
+  font-family: "Edwardian Script", cursive;
+  font-weight: 500;
+  font-size: 60px;
+  text-align: center;
+}
+
+.menu-column {
+  border: white solid;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.menu-column-header {
+  font-family: "Edwardian Script", cursive;
+  font-weight: 400;
+  font-size: 50px;
+  text-align: center;
+}
+
+.menu-item-header {
+  font-family: "Copperplate Gothic Bold", serif;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.menu-item-text {
+  font-family: "Aldine401 BT", serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.menu-item-text-last {
+  font-family: "Aldine401 BT", serif;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+#POHinfo {
+  font-size: 20px;
+}
+
+.contactUsTitle {
+  font-family: "Copperplate Gothic Bold", serif;
+  font-size: 35px;
+  text-align: center;
+}
+
+.eventDate {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.eventName {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.eventDescription {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.eventImage {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto
+}
+
+#POHlegend {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#middle-FAB {
+  border: white solid;
+  border-width: 0 3px 0 3px;
+}
+
+.cateringTitle {
+  font-family: Edwardian Script, cursive;
+  font-size: 100px;
+  margin-bottom: -30px;
+  color: #6B8059;
+}
+
+.cateringSubtitle1 {
+  color: #6B8059;
+  font-size: 50px;
+}
+
+.cateringSubtitle2 {
+  font-size: 35px
+}
+
+.cateringBullets {
+  font-family: 'Cinzel Bold', serif;
+  font-size: 35px
+}
+
+@media only screen and (max-width: 599px) {
+  #middle-FAB {
+    border-width: 3px 0 3px 0;
+    padding: 10px 0;
+  }
+  #first-FAB {
+    padding: 0 0 10px 0;
+  }
+  #last-FAB {
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  .toolbar-logo {
+    max-width: 100%;
+    max-height: 100px;
+  }
+  #NavbarTitle {
+    text-align: left;
+    font-size: 25px;
+    margin-top: -30px;
+  }
+  .eventDate {
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  .eventName {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .eventDescription {
+    font-size: 11px;
+    font-weight: 300;
+  }
+  .footer-text {
+    font-size: 9px;
+  }
+  .cateringTitle {
+    font-size: 50px;
+  }
+  .cateringSubtitle1 {
+    font-size: 25px;
+  }
+  .cateringSubtitle2 {
+    font-size: 17px
+  }
+}
+
+@media only screen and (max-width: 1264px) {
+  #CateringNavbarPhone {
+    font-size: 30px !important;
+  }
+
+  #CateringNavbarAddress {
+    font-size: 22px !important;
+  }
+}
