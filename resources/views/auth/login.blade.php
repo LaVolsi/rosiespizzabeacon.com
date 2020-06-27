@@ -9,9 +9,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Pamela's On The Hudson | Login</title>
+    <title>Rosie's Pizzeria | Login</title>
 
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="/favicon.png"/>
     <link rel="stylesheet" href="/css/app.css">
 </head>
 

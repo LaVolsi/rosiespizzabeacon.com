@@ -12,29 +12,29 @@
 */
 
 Route::get('/', function () {
-	return view('preRendered.index', ['directory' => '/']);
+	return view('home.index');
 });
 
-Route::get('/brunch-menu', function () {
-	return view('preRendered.index', ['directory' => '/brunch-menu']);
-});
-
-
-Route::get('/menu', function () {
-	return view('preRendered.index', ['directory' => '/menu']);
-});
-
+//Route::get('/brunch-menu', function () {
+//	return view('preRendered.index', ['directory' => '/brunch-menu']);
+//});
+//
+//
+//Route::get('/menu', function () {
+//	return view('preRendered.index', ['directory' => '/menu']);
+//});
+//
 Route::get('/contact', function () {
-	return view('preRendered.index', ['directory' => '/contact']);
+	return view('home.index');
 });
-
-Route::get('/liveMusic', function () {
-	return view('preRendered.index', ['directory' => '/liveMusic']);
-});
-
-Route::get('/catering', function () {
-	return view('preRendered.index', ['directory' => '/catering']);
-});
+//
+//Route::get('/liveMusic', function () {
+//	return view('preRendered.index', ['directory' => '/liveMusic']);
+//});
+//
+//Route::get('/catering', function () {
+//	return view('preRendered.index', ['directory' => '/catering']);
+//});
 
 Route::get('/menus', 'MenuController@get');
 Route::get('/menu/{label}', 'MenuController@showMenu');

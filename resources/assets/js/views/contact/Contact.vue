@@ -2,9 +2,9 @@
     <div id="app">
         <v-app id="inspire" dark>
 
-            <POHheader route="/contact"></POHheader>
+            <pageHeader route="/contact"></pageHeader>
 
-            <v-content style="padding:0">
+            <v-main style="padding:0">
                 <v-container fluid style="margin-bottom: 50px;">
                     <v-row justify="center">
                         <v-card style="max-width: 900px; width: 100%; padding:15px">
@@ -81,9 +81,9 @@
                         </v-card>
                     </v-row>
                 </v-container>
-            </v-content>
+            </v-main>
 
-            <POHfooter></POHfooter>
+            <pageFooter></pageFooter>
 
         </v-app>
     </div>
@@ -203,7 +203,7 @@
 </script>
 
 
-<!--<POHfooter></POHfooter>-->
+<!--<pageFooter></pageFooter>-->
 <!--</v-app>-->
 <!--</div>-->
 <!--</template>-->

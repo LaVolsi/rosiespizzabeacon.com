@@ -22,15 +22,5 @@ class UsersTableSeeder extends Seeder {
 			'email'      => 'paullivorsi@gmail.com',
 			'password'   => bcrypt('9911Paul'),
 		]);
-		$colin = factory(App\User::class)->create([
-			'name'       => 'Colin',
-			'email'      => 'collin@rascalnewyork.com',
-			'password'   => bcrypt('ChickenRules1!'),
-		]);
-		$pam = factory(App\User::class)->create([
-			'name'       => 'Pam',
-			'email'      => 'info@pamelasonthehudson.com',
-			'password'   => bcrypt('ChickenRules1!'),
-		]);
 	}
 }

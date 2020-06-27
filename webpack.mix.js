@@ -31,29 +31,4 @@ mix.js('resources/assets/js/app.js', 'public/js/app.js')
         },
         notify: false
     })
-    .disableSuccessNotifications()
-    .webpackConfig({
-        plugins: [
-            new PrerenderSPAPlugin({
-                staticDir: path.join(__dirname, '/public'),
-                outputDir: path.join(__dirname, 'resources/views/preRendered'),
-                indexPath: path.join(__dirname, 'resources/views/home', 'index.html'),
-                routes: [
-                    '/',
-                    '/brunch-menu',
-                    '/menu',
-                    '/contact',
-                    '/liveMusic',
-                    '/catering',
-                ],
-                renderer: new PuppeteerRenderer(),
-                minify: {
-                    collapseBooleanAttributes: true,
-                    collapseWhitespace: true,
-                    decodeEntities: true,
-                    keepClosingSlash: true,
-                    sortAttributes: true
-                }
-            }),
-        ]
-    });
+    .disableSuccessNotifications();

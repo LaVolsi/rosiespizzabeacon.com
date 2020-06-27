@@ -10,30 +10,30 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
-        "@babel/preset-env": "^7.6.0",
-        "@mdi/font": "^4.4.95",
+        "@babel/preset-env": "^7.10.3",
+        "@mdi/font": "^4.9.95",
         "bootstrap-sass": "^3.4.1",
         "browser-sync": "^2.26.7",
         "browser-sync-webpack-plugin": "^2.2.2",
         "cross-env": "^5.2.1",
         "laravel-mix": "^4.1.4",
         "resolve-url-loader": "^2.3.2",
-        "sass": "^1.22.10",
+        "sass": "^1.26.9",
         "sass-loader": "^7.3.1",
-        "vue-template-compiler": "^2.6.10"
+        "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
-        "@babel/polyfill": "^7.6.0",
-        "axios": "^0.19.0",
+        "@babel/polyfill": "^7.10.1",
+        "axios": "^0.19.2",
         "babel-polyfill": "^6.26.0",
         "html-webpack-plugin": "^3.2.0",
-        "jquery": "^3.4.1",
-        "moment": "^2.24.0",
+        "jquery": "^3.5.1",
+        "moment": "^2.27.0",
         "prerender-spa-plugin": "^3.4.0",
-        "vue": "^2.6.10",
-        "vue-router": "^3.1.3",
-        "vuelidate": "^0.7.4",
-        "vuetify": "^2.0.15",
-        "vuex": "^3.1.1"
+        "vue": "^2.6.11",
+        "vue-router": "^3.3.4",
+        "vuelidate": "^0.7.5",
+        "vuetify": "^2.3.2",
+        "vuex": "^3.4.0"
     }
 }

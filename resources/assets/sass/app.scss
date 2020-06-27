@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,40,500,700|Material+Icons');
 @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
-@import "../../../node_modules/vuetify/dist/vuetify.css";
 
 @font-face {
   font-family: "Edwardian Script";
@@ -37,6 +36,10 @@
   src: url("fonts/cinzel_bold.otf") format("truetype"),
 }
 
+a {
+  color: black !important;
+}
+
 .aldine401BT {
   font-family: "Aldine401 BT";
 }
@@ -52,10 +55,12 @@
 }
 
 #NavbarTitle {
-  padding-top: 60px;
-  font-family: "Edwardian Script", cursive;
+  padding-top: 10px;
+  font-family: "DejaVu Sans";
   font-weight: 600;
-  font-size: 70px;
+  font-size: 80px;
+  line-height: 50px;
+  color: black;
 }
 
 #NavbarPhone {
@@ -65,19 +70,13 @@
   letter-spacing: 2px;
 }
 
-#CateringNavbarPhone {
-  color: white;
-  font-family: "Edwardian Script", cursive;
-  font-weight: 600;
-  font-size: 70px;
-}
-
-#CateringNavbarAddress {
-  color: white;
-  font-family: 'Cinzel Decorative', cursive;
-  font-weight: 900;
-  font-size: 25px;
-  letter-spacing: 2px;
+.banner {
+  height: 600px;
+  background: url(/images/banner.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #NavbarAddress {

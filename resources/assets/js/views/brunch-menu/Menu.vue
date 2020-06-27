@@ -1,6 +1,6 @@
 <template>
     <v-app dark>
-        <POHheader route="/brunch-menu"></POHheader>
+        <pageHeader route="/brunch-menu"></pageHeader>
         <v-content style="padding: 0">
             <v-container fluid>
                 <v-row>
@@ -24,12 +24,12 @@
                 </v-row>
             </v-container>
         </v-content>
-        <POHfooter></POHfooter>
+        <pageFooter></pageFooter>
     </v-app>
 </template>
 
 <script>
-    Vue.component('POHheader', require('../utils/Header.vue').default);
+    Vue.component('pageHeader', require('../utils/Header.vue').default);
     Vue.component('appetizers', require('./utils/Appetizers.vue').default);
     Vue.component('Brunch', require('./utils/Brunch.vue').default);
     Vue.component('Lunch', require('./utils/Lunch.vue').default);
@@ -37,7 +37,7 @@
     Vue.component('POHlegend', require('./utils/Legend.vue').default);
     Vue.component('Sides', require('./utils/Sides.vue').default);
     Vue.component('Refreshments', require('./utils/Refreshments.vue').default);
-    Vue.component('POHfooter', require('../utils/Footer.vue').default);
+    Vue.component('pageFooter', require('../utils/Footer.vue').default);
 
     export default {
         data: () => ({}),

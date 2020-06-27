@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <v-app id="inspire" dark>
-            <POHheader route="/liveMusic"></POHheader>
+            <pageHeader route="/liveMusic"></pageHeader>
             <v-container style="margin-bottom: 50px;">
                 <v-row justify="center">
                     <v-card style="max-width: 1000px; width: 100%; padding:15px">
@@ -46,7 +46,7 @@
                         </v-container>
                     </v-card>
                 </v-row>
-                <POHfooter></POHfooter>
+                <pageFooter></pageFooter>
             </v-container>
         </v-app>
     </div>

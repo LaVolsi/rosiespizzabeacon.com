@@ -22,30 +22,30 @@
                         <v-list-item-title>Menus</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
-                <v-list-item @click="$router.push('/LiveMusic')">
-                    <v-list-item-action>
-                        <v-icon>settings</v-icon>
-                    </v-list-item-action>
-                    <v-list-item-content>
-                        <v-list-item-title>Live Music</v-list-item-title>
-                    </v-list-item-content>
-                </v-list-item>
-                <v-list-item @click="goToSliderRev()">
-                    <v-list-item-action>
-                        <v-icon>aspect_ratio</v-icon>
-                    </v-list-item-action>
-                    <v-list-item-content>
-                        <v-list-item-title>Edit Sliders</v-list-item-title>
-                    </v-list-item-content>
-                </v-list-item>
-                <v-list-item @click="downloadMailingList()">
-                    <v-list-item-action>
-                        <v-icon>assignment</v-icon>
-                    </v-list-item-action>
-                    <v-list-item-content>
-                        <v-list-item-title>Download Mailing List</v-list-item-title>
-                    </v-list-item-content>
-                </v-list-item>
+<!--                <v-list-item @click="$router.push('/LiveMusic')">-->
+<!--                    <v-list-item-action>-->
+<!--                        <v-icon>settings</v-icon>-->
+<!--                    </v-list-item-action>-->
+<!--                    <v-list-item-content>-->
+<!--                        <v-list-item-title>Live Music</v-list-item-title>-->
+<!--                    </v-list-item-content>-->
+<!--                </v-list-item>-->
+<!--                <v-list-item @click="goToSliderRev()">-->
+<!--                    <v-list-item-action>-->
+<!--                        <v-icon>aspect_ratio</v-icon>-->
+<!--                    </v-list-item-action>-->
+<!--                    <v-list-item-content>-->
+<!--                        <v-list-item-title>Edit Sliders</v-list-item-title>-->
+<!--                    </v-list-item-content>-->
+<!--                </v-list-item>-->
+<!--                <v-list-item @click="downloadMailingList()">-->
+<!--                    <v-list-item-action>-->
+<!--                        <v-icon>assignment</v-icon>-->
+<!--                    </v-list-item-action>-->
+<!--                    <v-list-item-content>-->
+<!--                        <v-list-item-title>Download Mailing List</v-list-item-title>-->
+<!--                    </v-list-item-content>-->
+<!--                </v-list-item>-->
             </v-list>
         </v-navigation-drawer>
         <v-app-bar app clipped-left>

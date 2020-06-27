@@ -1,10 +1,11 @@
 <template>
     <v-app>
-        <POHheader></POHheader>
-        <div class="revslider" data-alias="homepage"></div>
-        <v-content style="padding: 0">
+        <pageHeader></pageHeader>
+        <!--        <div class="revslider" data-alias="homepage"></div>-->
+        <div class="banner"></div>
+        <v-main style="padding: 0">
             <v-container fluid style="padding: 0 !important">
-                <v-card style="background-color: rgb(234, 106, 64);">
+                <v-card color="secondary">
                     <v-container>
                         <v-row style="font-size: 25px;">
                             <v-col
@@ -14,7 +15,7 @@
                                     sm="4"
                             >
                                 <v-icon style="font-size: 35px; line-height: 30px">local_dining</v-icon>
-                                Modern American Cuisine
+                                Dine In
                             </v-col>
                             <v-col
                                     style="text-align: center; font-family: 'Cinzel Bold',serif"
@@ -23,9 +24,7 @@
                                     sm="4"
                             >
                                 <v-icon style="font-size: 35px; line-height: 30px">waves</v-icon>
-                                Scenic Atmosphere
-                                <br>
-                                On The Hudson
+                                Take-Out
                             </v-col>
                             <v-col
                                     style="text-align: center; font-family: 'Cinzel Bold',serif"
@@ -34,110 +33,29 @@
                                     sm="4"
                             >
                                 <v-icon style="font-size: 35px; line-height: 30px">star</v-icon>
-                                Providing A Unique
-                                <br>
-                                Dining Experience
-                            </v-col>
-                        </v-row>
-                    </v-container>
-                </v-card>
-                <v-card>
-                    <v-container>
-                        <v-row style="padding: 25px 0 ">
-                            <v-col
-                                    style="text-align: center; border-bottom: white solid; border-bottom-width: 1px; padding: 10px 0"
-                                    cols="12"
-                            >
-                                <h1>Wednesdays</h1>
-                                <h2>Dinner Service: 4PM - 10PM</h2>
-                                <h4>Happy Hour From 4PM to 6:30PM - $1 Off All Drinks - Half Price Bar Menu</h4>
-                                <h4>Dinner For Two Special @ $59.95 - 2 Appetizers, 2 Entrees And A Bottle Of Wine From
-                                    Select Menu</h4>
-                                <h4>First Wednesday of the month is Trivia.</h4>
-                            </v-col>
-                            <v-col
-                                    style="text-align: center; border-bottom: white solid; border-bottom-width: 1px; padding: 10px 0"
-                                    cols="12"
-                            >
-                                <h1>Thursdays</h1>
-                                <h2>Dinner Service: 4PM - 10PM</h2>
-                                <h4>Happy Hour From 4PM to 6:30PM - $1 Off All Drinks - Half Price Bar Menu</h4>
-                            </v-col>
-                            <v-col
-                                    style="text-align: center; border-bottom: white solid; border-bottom-width: 1px; padding: 10px 0"
-                                    cols="12"
-                            >
-                                <h1>Fridays</h1>
-                                <h2>Dinner Service: 4PM - 11PM</h2>
-                                <h4>Happy Hour From 4PM to 6:30PM - $1 Off All Drinks - Free Happy Hour Buffet</h4>
-                                <h4>Live Music 8:30pm-11:30pm</h4>
-                                <h4>Chef Specials</h4>
-                            </v-col>
-                            <v-col
-                                    style="text-align: center; border-bottom: white solid; border-bottom-width: 1px; padding: 10px 0"
-                                    cols="12"
-                            >
-                                <h1>Saturdays</h1>
-                                <h2>Dinner Service: 4PM - 11PM</h2>
-                                <h4>Live Music 8PM - 11 PM</h4>
-                                <h4>Chef Specials</h4>
-                            </v-col>
-                            <v-col
-                                    style="text-align: center; border-bottom: white solid; border-bottom-width: 1px; padding: 10px 0"
-                                    cols="12"
-                            >
-                                <h1>Sundays</h1>
-                                <h2>Brunch Service: 10:30AM - 3PM</h2>
-                                <h4>Bloody Mary Bar With All The Fixin's</h4>
-                                <h4>$15 Pitchers of Mimosas & Bloody Mary's</h4>
-                            </v-col>
-                            <v-col
-                                    style="text-align: center; border-bottom: white solid; border-bottom-width: 1px; padding: 10px 0"
-                                    cols="12"
-                            >
-                                <h1>“Dock and Dine”</h1>
-                                <h2>Call Bill Himarris 845-405-2879</h2>
-                                <h4>to reserve your slip in the NYC Marina</h4>
+                                Catering Available
                             </v-col>
                         </v-row>
                     </v-container>
                 </v-card>
             </v-container>
-        </v-content>
-        <v-content style="padding: 0">
+        </v-main>
+        <v-main style="padding: 0">
             <v-container fluid>
                 <v-row>
                     <v-col style=" text-align: center">
-                        <v-card style="padding: 50px">
-                            <v-alert
-                                    v-if="showAlert"
-                                    v-model="showAlert"
-                                    dismissible
-                                    :type="alert.type"
-                                    transition="scale-transition"
-                                    style="position: absolute; width:100%; margin-left: -50px; z-index:100"
-                            >
-                                {{alert.message}}
-                            </v-alert>
-                            <h1><u>Join Our Mailing List</u></h1>
-                            <v-text-field
-                                    label="Email"
-                                    v-model="input"
-                                    :error-messages="Errors"
-                                    @input="delayTouch($v.input)"
-                                    @blur="$v.input.$touch()"
-                            ></v-text-field>
+                        <v-card style="padding: 50px; font-size: 30px">
                             <v-row justify="center">
-                                <v-btn @click="submit()" :disabled="showAlert" :loading="loading">
-                                    Submit
-                                </v-btn>
+                                Mon, Wed, Thurs, Sun 11am-9pm
+                                <br>
+                                Fri & Sat 11am - 10pm | Closed Tuesday
                             </v-row>
                         </v-card>
                     </v-col>
                 </v-row>
             </v-container>
-        </v-content>
-        <POHfooter></POHfooter>
+        </v-main>
+        <pageFooter></pageFooter>
     </v-app>
 </template>
 

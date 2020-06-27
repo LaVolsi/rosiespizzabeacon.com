@@ -1,6 +1,6 @@
 <template>
     <v-app dark>
-        <POHheader2 route="/catering"></POHheader2>
+        <pageHeader2 route="/catering"></pageHeader2>
 
         <v-content style="padding: 0">
             <v-container fluid>
@@ -140,7 +140,7 @@
                 </v-row>
             </v-container>
         </v-content>
-        <POHfooter></POHfooter>
+        <pageFooter></pageFooter>
     </v-app>
 </template>
 
